@@ -1,0 +1,2 @@
+module GdprlawHelper
+end
