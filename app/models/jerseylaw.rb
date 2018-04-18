@@ -1,0 +1,2 @@
+class Jerseylaw < ApplicationRecord
+end
