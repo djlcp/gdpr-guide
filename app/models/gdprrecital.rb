@@ -1,0 +1,2 @@
+class Gdprrecital < ApplicationRecord
+end
