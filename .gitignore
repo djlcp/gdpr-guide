@@ -6,6 +6,8 @@
 
 # Ignore each person's database.yml to protect passwords
 /config/database.yml
+database.yml
+config/database.yml
 
 # Ignore bundler config.
 /.bundle
