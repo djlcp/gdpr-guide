@@ -1,0 +1,2 @@
+class Gdprarticle < ApplicationRecord
+end
