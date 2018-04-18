@@ -1,2 +1,0 @@
-class Jerseylaw < ApplicationRecord
-end
