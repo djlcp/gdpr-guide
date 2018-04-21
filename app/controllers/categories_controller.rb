@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
-  def index
+	def index
   	@categories = Category.all.order('title ASC')
-  end
+	end
 
   def show
   	@category = Category.friendly.find(params[:id])
