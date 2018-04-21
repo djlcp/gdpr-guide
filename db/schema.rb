@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180418224951) do
+ActiveRecord::Schema.define(version: 20180421155740) do
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "title"
@@ -41,6 +41,20 @@ ActiveRecord::Schema.define(version: 20180418224951) do
     t.integer "recital_num"
     t.string "recital_title"
     t.text "recital_body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "guidancenotes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer "gdprarticle_id"
+    t.integer "gdprrecital_id"
+    t.integer "jerseylaw_id"
+    t.integer "category_id"
+    t.string "title"
+    t.string "link"
+    t.date "publication_date"
+    t.string "type"
+    t.text "summary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,2 @@
+class Guidancenote < ApplicationRecord
+end
