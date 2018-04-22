@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
+gem 'devise_invitable', '~> 1.7.0'
 gem 'friendly_id', '~> 5.1.0'
 
 # Use Capistrano for deployment
