@@ -7,7 +7,7 @@ class Admin::UsersController < ApplicationController
   end
 
   def show
-    @user = User.friendly.find(params[:id])
+    @user = User.find(params[:id])
   end
  
   def create
@@ -26,7 +26,7 @@ class Admin::UsersController < ApplicationController
   end
 
   def update
-    @user = User.friendly.find(params[:id])
+    @user = User.find(params[:id])
 
       if @user.update(user_params)
         flash[:notice] = 'User Updated'
@@ -37,17 +37,19 @@ class Admin::UsersController < ApplicationController
   end
 
   def edit
-      @user = User.friendly.find(params[:id])
+      @user = User.find(params[:id])
   end
 
   def destroy
-    @user = User.friendly.find(params[:id])
+    @user = User.find(params[:id])
     @user.destroy
 
     flash[:notice] = "User Removed"
 
     redirect_to admin_users_path
   end
+
+  protected
 
   # private
 
