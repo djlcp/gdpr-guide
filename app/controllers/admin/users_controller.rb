@@ -49,13 +49,11 @@ class Admin::UsersController < ApplicationController
     redirect_to admin_users_path
   end
 
-  protected
+  private
 
-  # private
-
-  #   def user_params
-  #     params.require(:model).permit(:[], :[])
-  #   end
+    def user_params
+      params.require(:user).permit(:email)
+    end
 
 
  end
