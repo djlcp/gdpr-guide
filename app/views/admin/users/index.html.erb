@@ -4,7 +4,9 @@
 <% @users.each do |user| %>
 	<br>
 	<%= link_to user.email, admin_user_path(user)  %></td>
-		<br>
+	<br>
+	<p>Joined on: <%= user.created_at.to_time.strftime('%e %B %Y') %></p>
+	<br>
 <% end %>
 
 

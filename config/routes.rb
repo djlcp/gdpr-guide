@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   resources :types
-  devise_for :users
+  devise_for :users, :controllers => { :invitations => 'admin/invitations' }
   
   root to: 'home#index'
 
